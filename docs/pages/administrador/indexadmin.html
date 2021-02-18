@@ -8,11 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../../css/style.css">
-    <!-- Sweet Alert 2 -->
-    <link rel="stylesheet" href="../../plugins/sweetalert2/sweetalert2.min.css">
   </head>
   <body>
-      <div class="wrapper d-flex align-items-stretch">
+		<div class="wrapper d-flex align-items-stretch">
             <!-- Menu lateral Izquierdo -->
             <nav id="sidebar">
 				<div class="p-4 pt-5">
@@ -52,10 +50,11 @@
 	            </div>
 	      </div>
     	</nav>
-            <!-- Sección derecha de la página -->
-            <div id="content" class="p-4 p-md-5">
-                <!-- Menu superior flotante -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
 
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -68,69 +67,50 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="../../pages/administrador/indexadmin.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="http://siul.unilibre.edu.co/sinugwt/">SIUL</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../../pages/administrador/perfilxadmin.html">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../login.html">Cerrar Sesión</a>
+                    <a class="nav-link" href="#">Cerrar Sesión</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-                <!-- Contenido de la página -->
-                <div class="container-fluid">
-                  <div class="container-fluid">
-                      <form id="perfilxadmin">
-                          <h1 class="mb-4"><strong>Datos personales</strong></h1>
-                          <div class="row">
-                              <div class="col">
-                                  <div class="form-group ">
-                                      <label  for="exampleFormControlInput1">Nombres</label>
-                                      <input v-model="nombres"  type="text" class="form-control" disabled>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <label for="exampleFormControlInput1">Apellidos</label>
-                                  <input v-model="apellidos"  type="text" class="form-control" disabled>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col">
-                                  <div class="form-group ">
-                                      <label for="exampleFormControlInput1">Correo electrónico</label>
-                                      <input v-model="correo"  type="text" class="form-control" disabled>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <label for="exampleFormControlInput1">Contraseña</label>
-                                  <input type="password" class="form-control" disabled>
-                              </div>
-                          </div>
-                          <button type="button" class="btn btn-warning" @click="btnEditar(nombres, apellidos, correo)">Editar</button>
-                         
-                      </form>
-                  </div>
-              </div>
-            </div>
+
+        <div class="container-fluid">
+        <h1><strong>Estimado Usuario</strong></h1>
+            <p>
+            Recomendaciones al realizar sus consultas a través de nuestra página:<br>
+            Memorice su usuario y contraseña y manténgalo en absoluta reserva.<br>
+            Realice sus consultas por internet desde: el computador personal de su casa u oficina, o las salas didácticas y de computo de la universidad.<br>
+            En algunos sitios públicos pueden instalar programas para rastrear sus operaciones y consultas.<br>
+            Nunca utilice terceras personas para realizar sus consultas, hágalas siempre personalmente.<br>
+            Nunca la Universidad le solicitará estos datos secretos a través de ningún medio.
+            </p>
+            <h1><strong>Para mayor información</strong></h1>
+            <p>
+            Inscripciones 5829810 Ext. 230<br>
+            Posgrados 5829810 Ext. 211<br>
+            Registro y Control 5829810 Ext. 237<br>
+            Facultad de Derecho 5829810 Ext. 232<br>
+            Facultad de Ingeniería 5829810 Ext. 210<br>
+            Facultad de Derecho 5829810 Ext. 229<br>
+            </p>
       </div>
-      <script src="../../js/jquery.min.js"></script>
-      <script src="../../js/popper.js"></script>
-      <script src="../../js/bootstrap.min.js"></script>
-      <!-- Vue -->
-      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-      <!-- Axios -->
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <!-- Sweet Alert 2 -->
-      <script src="../../plugins/sweetalert2/sweetalert2.all.min.js"></script>
-      <!-- Lógica para login -->
-      <script src="../../js/admin/perfil.js"></script>
-      <script src="../../js/main.js"></script>
+          
+      </div>
+		</div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
   </body>
 </html>
